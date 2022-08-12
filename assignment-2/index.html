@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     
+      input {
+        display: block;
+        margin: 10px 0 10px 0;
+      }
+      h1 {
+        color: blue;
+      }
+      .container {
+        margin: auto;
+      }
+      .searchBox{
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        gap: 1.25em;
+        margin-top: 30px;
+      }
+      #search__button{
+        font-size: 1em;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0.8em 0;
+        border-radius: 1em;
+
+      }
+      .searchBox input{
+        font-size: 1em;
+        padding: 0 0.62em;
+        border: none;
+        border-bottom: 2px solid blue;
+        outline: none;
+
+      }
+      .searchLangBox{
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        gap: 1.25em;
+        margin-top: 30px;
+      }
+      #searchLang__button{
+        font-size: 1em;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0.8em 0;
+        border-radius: 1em;
+
+      }
+      .searchLangBox input{
+        font-size: 1em;
+        padding: 0 0.62em;
+        border: none;
+        border-bottom: 2px solid blue;
+        outline: none;
+
+      }
+
+
+      .searchBorderBox{
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        gap: 1.25em;
+        margin-top: 30px;
+      }
+      #searchBorder__button{
+        font-size: 1em;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0.8em 0;
+        border-radius: 1em;
+
+      }
+      .searchBorderBox input{
+        font-size: 1em;
+        padding: 0 0.62em;
+        border: none;
+        border-bottom: 2px solid blue;
+        outline: none;
+
+      }
+
+
+      .searchPopBox{
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        gap: 1.25em;
+        margin-top: 30px;
+      }
+      #searchPop__button{
+        font-size: 1em;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0.8em 0;
+        border-radius: 1em;
+
+      }
+      .searchPopBox input{
+        font-size: 1em;
+        padding: 0 0.62em;
+        border: none;
+        border-bottom: 2px solid blue;
+        outline: none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>List of all Countries</h1>
+      <select id="countries"></select>
+    </div>
+
+
+    <div>
+      <div class="searchBox">
+        <input
+          type="text"
+          id="country__input"
+          placeholder="Enter a country name here to get details..."
+        />
+        <button id="search__button">Search</button>
+      </div>
+    </div>
+
+    <div id="result">
+    </div>
+
+
+    <div>
+        <div class="searchLangBox">
+          <input
+            type="text"
+            id="countryLang__input"
+            placeholder="Enter a language name here to know the country..."
+          />
+          <button id="searchLang__button">Search</button>
+        </div>
+      </div>
+      <div id="langResult">
+  
+      </div>
+
+      <div>
+        <div class="searchBorderBox">
+          <input
+            type="text"
+            id="countryBorder__input"
+            placeholder="Enter country name here to know the border country..."
+          />
+          <button id="searchBorder__button">Search</button>
+        </div>
+      </div>
+      <div id="borderResult">
+  
+      </div>
+
+      <div>
+        <div class="searchPopBox">
+          <input
+            type="text"
+            id="countryPop__input"
+            placeholder="Enter figure in million to know countries with population..."
+          />
+          <button id="searchPop__button">Search</button>
+        </div>
+      </div>
+      <div id="popResult">
+  
+      </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
